@@ -55,12 +55,12 @@ class Point implements ArrayAccess
 			throw new LogicException("can only calculate distances from points in the same space");
 
 		$distance = 0;
-		for ($n=0; $n<$this->dimention; $n++) {
+		for ($n = 0; $n < $this->dimention; $n++) {
 			$difference = $this->coordinates[$n] - $point->coordinates[$n];
 			$distance  += $difference * $difference;
 		}
 
-		return $precise ? sqrt($distance) : $distance;
+		return $precise ? sqrt(1/$distance) : 1/$distance;
 	}
 
 	public function getClosest($points)
