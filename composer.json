@@ -1,11 +1,11 @@
 {
-    "name": "bdelespierre/php-kmeans",
+    "name": "sztyup/php-kmeans",
     "type": "library",
-    "description": "K-Means algorithm for PHP",
+    "description": "K-Means algorithm for PHP rewritten for GTB",
     "keywords": ["php", "kmeans", "kmeans plus plus", "utility"],
     "license": "LGPL",
     "authors": [
-        { "name": "Benjamin Delespierre", "email": "benjamin.delespierre@gmail.com" }
+        { "name": "Csupity László", "email": "sztyup@gmail.com" }
     ],
     "require": {
         "php": ">=5.4.0"
